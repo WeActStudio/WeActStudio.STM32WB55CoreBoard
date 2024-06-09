@@ -2,7 +2,7 @@
 # WeActStudio.STM32WB55CoreBoard
 ![display](Images/1.png)
 STM32WB55CGU6
-> 64Mhz Max,512KB RAM,1024KB ROM
+> 64Mhz Max,256KB RAM,1024KB ROM
 
 > 出厂默认烧录`stm32wb5x_BLE_Stack_full_fw.bin`协议栈，v1.19.0.2
 
