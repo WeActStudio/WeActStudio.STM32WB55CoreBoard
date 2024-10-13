@@ -1,6 +1,5 @@
 /*****************************************************************************
  * @file    ble_types.h
- * @author  MDG
  * @brief   STM32WB BLE command/event types
  *          Auto-generated file: do not edit!
  *****************************************************************************
@@ -1392,6 +1391,22 @@ typedef __PACKED_STRUCT
   uint8_t Status;
   uint8_t RSSI;
 } aci_hal_read_rssi_rp0;
+
+typedef __PACKED_STRUCT
+{
+  uint8_t Mode;
+  uint8_t Key[16];
+  uint8_t IV[8];
+  uint16_t In_Data_Length;
+  uint8_t In_Data[BLE_CMD_MAX_PARAM_LEN - 27];
+} aci_hal_ead_encrypt_decrypt_cp0;
+
+typedef __PACKED_STRUCT
+{
+  uint8_t Status;
+  uint16_t Out_Data_Length;
+  uint8_t Out_Data[(BLE_EVT_MAX_PARAM_LEN - 3) - 3];
+} aci_hal_ead_encrypt_decrypt_rp0;
 
 typedef __PACKED_STRUCT
 {
